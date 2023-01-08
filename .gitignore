@@ -1,0 +1,49 @@
+# Go build files
+/build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go test command
+*.out
+
+# Go dependency files
+vendor/
+
+# Binaries
+/webhook-listener
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Environment variables
+.env
+
+# Docker files
+docker-compose.override.yml
+*.log
+
+# Logs and debug files
+logs/
+*.log
+*.trace
+*.prof
+*.bak
+debug/
+*.testresult
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Traefik dynamic config
+traefik-dynamic.yaml
+
+# Test Coverage reports
+coverage.*
