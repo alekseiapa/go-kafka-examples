@@ -331,6 +331,12 @@ go-kafka-examples/
 
 - Install Go.
 
+- Clone the repo:
+```
+git clone https://github.com/alekseiapa/go-kafka-examples
+cd go-kafka-examples
+```
+
 - Set up a Kafka broker. For example, you can use Docker:
 
 ```bash
@@ -341,6 +347,12 @@ docker run -d --name kafka -p 9092:9092 -e KAFKA_ADVERTISED_HOST_NAME=localhost 
 
 ```bash
 kafka-topics.sh --create --topic chat-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+```
+
+- Use the provided Makefile to run examples:
+
+```bash
+make example=basic/consume_json_messages run
 ```
 
 # ⚙️ Running Examples Using a Makefile
