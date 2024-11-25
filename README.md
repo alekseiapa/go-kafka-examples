@@ -337,15 +337,13 @@ git clone https://github.com/alekseiapa/go-kafka-examples
 cd go-kafka-examples
 ```
 
-## Set up a Kafka broker. For example, you can use Docker.
-
-- Create a docker network
+## Set up a Kafka broker via docker-compose.
 
 ```bash
 docker-compose up -d
 ```
 
-- Create the required Kafka topics. For example:
+- Create the required Kafka topics:
 
 ```bash
 docker exec -it kafka /bin/bash
