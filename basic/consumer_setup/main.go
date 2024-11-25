@@ -12,7 +12,7 @@ import (
 // It demonstrates setting up a Kafka consumer, configuring it, and reading messages from a Kafka topic.
 func main() {
 	// Kafka broker address
-	brokerAddress := "localhost:9092"
+	brokerAddress := "localhost:9093"
 	// Kafka topic to read messages from
 	topic := "example-topic"
 	// Consumer group ID

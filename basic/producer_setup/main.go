@@ -13,7 +13,7 @@ import (
 // It demonstrates setting up a Kafka producer, configuring it, and sending a test message to a Kafka topic.
 func main() {
 	// Kafka broker address
-	brokerAddress := "localhost:9092"
+	brokerAddress := "localhost:9093"
 	// Kafka topic to send messages to
 	topic := "example-topic"
 

@@ -337,16 +337,19 @@ git clone https://github.com/alekseiapa/go-kafka-examples
 cd go-kafka-examples
 ```
 
-- Set up a Kafka broker. For example, you can use Docker:
+## Set up a Kafka broker. For example, you can use Docker.
+
+- Create a docker network
 
 ```bash
-docker run -d --name kafka -p 9092:9092 -e KAFKA_ADVERTISED_HOST_NAME=localhost -e KAFKA_ZOOKEEPER_CONNECT=localhost:2181 spotify/kafka
+docker-compose up -d
 ```
 
 - Create the required Kafka topics. For example:
 
 ```bash
-kafka-topics.sh --create --topic chat-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+docker exec -it kafka /bin/bash
+kafka-topics.sh --create --topic example-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 
 - Use the provided Makefile to run examples:
